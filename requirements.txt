@@ -1,6 +1,0 @@
-# form https://github.com/simonw/jupyterserverproxy-datasette-demo
-#jupyter-server-proxy
-git+https://github.com/jupyterhub/jupyter-server-proxy.git
-# datasette branch with new -d scan directory option
-https://github.com/simonw/datasette/archive/ec0d68da7099de6a829505541a51ae75b77afe8f.zip
-datasette-debug-asgi
