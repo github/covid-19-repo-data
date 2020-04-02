@@ -1,10 +1,14 @@
 # COVID-19 Public Repository Data
 
-Preview this data on Binder with datasette [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hamelsmu/covid-19-repo-data/master?urlpath=datasette)
-
 A comprehensive versioned dataset of the repositories and relevant related metadata about public projects hosted on GitHub related to the 2019 Novel Coronavirus and associated COVID-19 disease.
 
 For a view of the latest projects, see the [covid-19](https://github.com/topics/covid-19) topic on GitHub.
+
+## Preview This Data With A SQL Interface
+
+https://covid-datasette.herokuapp.com/covid_sql
+
+> The above page is generated with [datasette](https://github.com/simonw/datasette), a tool for exploring and publishing data. It helps people take data of any shape or size and publish that as an interactive, explorable website and accompanying API.
 
 ## Why is GitHub doing this?
 
