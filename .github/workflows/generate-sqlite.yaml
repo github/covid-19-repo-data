@@ -2,9 +2,9 @@
 name: Generate DB For Datasette
 on:
   push:
-    paths: /data/tsv/*.tsv
-    branches:    
-    - master 
+    # paths: /data/tsv/*.tsv
+    # branches:    
+    # - master 
 
 jobs:
   update-db:
