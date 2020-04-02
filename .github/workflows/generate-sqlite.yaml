@@ -30,7 +30,6 @@ jobs:
         echo "::set-output name=latest_file::${FILE}"
 
     - name: build db
-      id: file
       run: |
         csvs-to-sqlite "${LATEST_FILE}" covid_sql.sqlite -s $'\t'
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
