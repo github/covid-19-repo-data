@@ -22,6 +22,7 @@ jobs:
     - name: install dependencies
       run: |
         pip3 install csvs-to-sqlite
+        heroku plugins:install heroku-builds
 
     - name: get latest file
       id: file
@@ -29,13 +30,15 @@ jobs:
         FILE=`ls data/tsv/*.tsv -Art | tail -n 1`
         echo "::set-output name=latest_file::${FILE}"
 
-    - name: build db
+    - name: push db to heroku
       run: |
         csvs-to-sqlite "${LATEST_FILE}" covid_sql.sqlite -s $'\t'
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git config --global user.name "github-actions[bot]"
-        git add covid_sql.sqlite 
-        git commit -m'[bot] refresh sqlite db for datasette'
-        git push -f
+        datasette publish heroku covid_sql.sqlite -n covid-datasette
+        # git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        # git config --global user.name "github-actions[bot]"
+        # git add covid_sql.sqlite 
+        # git commit -m'[bot] refresh sqlite db for datasette'
+        # git push -f
       env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         LATEST_FILE: ${{ steps.file.outputs.latest_file }}
