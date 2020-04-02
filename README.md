@@ -9,7 +9,7 @@ For a view of the latest projects, see the [covid-19](https://github.com/topics/
 
 ## Preview This Data With A SQL Interface
 
-https://covid-datasette.herokuapp.com/covid_sql
+https://covid-repo-data.herokuapp.com/covid_sql/latest_data
 
 > The above page is generated with [datasette](https://github.com/simonw/datasette), a tool for exploring and publishing data. It helps people take data of any shape or size and publish that as an interactive, explorable website and accompanying API.
 
