@@ -33,7 +33,7 @@ jobs:
     - name: push db to heroku
       run: |
         csvs-to-sqlite "${LATEST_FILE}" covid_sql.sqlite -s $'\t'
-        datasette publish heroku covid_sql.sqlite -n covid-datasette
+        datasette publish heroku covid_sql.sqlite -n covid-repo-data
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         LATEST_FILE: ${{ steps.file.outputs.latest_file }}
