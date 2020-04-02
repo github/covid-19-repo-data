@@ -11,7 +11,14 @@ For a view of the latest projects, see the [covid-19](https://github.com/topics/
 
 https://covid-repo-data.herokuapp.com/covid_sql/latest_data
 
-> The above page is generated with [datasette](https://github.com/simonw/datasette), a tool for exploring and publishing data. It helps people take data of any shape or size and publish that as an interactive, explorable website and accompanying API.
+> The above page is generated with [datasette](https://github.com/simonw/datasette), a tool for exploring and publishing data, which provides the following features:
+
+- A SQL interface in the browser.
+- Full-text search.
+- Queries can be performed via a [REST API](https://datasette.readthedocs.io/en/stable/json_api.html), to get aggregated or subsets of your data programmatically.
+- Export query results as csv & json.
+- Data visualization [Vega plugins](https://github.com/simonw/datasette-vega)
+- and [much more](https://datasette.readthedocs.io/en/stable/index.html).
 
 ## Why is GitHub doing this?
 
