@@ -5,20 +5,7 @@
 
 A comprehensive versioned dataset of the repositories and relevant related metadata about public projects hosted on GitHub related to the 2019 Novel Coronavirus and associated COVID-19 disease.
 
-For a view of the latest projects, see the [covid-19](https://github.com/topics/covid-19) topic on GitHub.
-
-## Preview This Data With A SQL Interface
-
-https://covid-repo-data.herokuapp.com/covid_sql/latest_data
-
-> The above page is generated with [datasette](https://github.com/simonw/datasette), a tool for exploring and publishing data, which provides the following features:
-
-- A SQL interface in the browser.
-- Full-text search.
-- Queries can be performed via a [REST API](https://datasette.readthedocs.io/en/stable/json_api.html), to get aggregated or subsets of your data programmatically.
-- Export query results as csv & json.
-- Data visualization [Vega plugins](https://github.com/simonw/datasette-vega)
-- and [much more](https://datasette.readthedocs.io/en/stable/index.html).
+For a view of the latest projects, see the [covid-19](https://github.com/topics/covid-19) topic on GitHub. To preview and interact with the data provided, see the subsection [below](https://github.com/github/covid-19-repo-data/blob/master/README.md#preview-this-data-with-a-sql-interface).
 
 ## Why is GitHub doing this?
 
@@ -38,6 +25,15 @@ A comprehensive data dictionary that explains the contents of these files is [he
 The files have been versioned based on a weekly snapshot of identified repositories from the week of `2020-01-20` onward. 
 
 **We will update this repository with new data files on a weekly basis, generally on Tuesday. We will revisit this each month and provide an update on continuing this commitment.**
+
+
+### Preview This Data With A SQL Interface
+
+The below Heroku App provides a fully equipped in browser SQL interface with full-text search and [REST API](https://datasette.readthedocs.io/en/stable/json_api.html) extensibility.
+
+https://covid-repo-data.herokuapp.com/covid_sql/latest_data
+
+> The above page is generated with [datasette](https://github.com/simonw/datasette), a tool for exploring and publishing data, which provides [many other](https://datasette.readthedocs.io/en/stable/index.html) features.
 
 ### Identification methodology
 
