@@ -1,0 +1,42 @@
+  
+name: Generate DB For Datasette
+on:
+  push:
+    paths: /data/tsv/*.tsv
+    branches:    
+    - master 
+
+jobs:
+  update-db:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Copy Repository Contents
+      uses: actions/checkout@v2
+  
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.6
+
+    - name: install dependencies
+      run: |
+        pip3 install csvs-to-sqlite
+
+    - name: get latest file
+      id: file
+      run: |
+        FILE=`ls data/tsv/*.tsv -Art | tail -n 1`
+        echo "::set-output name=latest_file::${FILE}"
+
+    - name: build db
+      id: file
+      run: |
+        csvs-to-sqlite "${LATEST_FILE}" covid_sql.sqlite -s $'\t'
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        git add covid_sql.sqlite 
+        git commit -m'[bot] refresh sqlite db for datasette'
+        git push -f
+      env:
+        LATEST_FILE: ${{ steps.file.outputs.latest_file }}
