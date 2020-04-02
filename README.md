@@ -1,3 +1,6 @@
+[![Actions Status](https://github.com/github/covid-19-repo-data/workflows/Generate_DB/badge.svg)](https://github.com/github/covid-19-repo-data/actions)
+
+
 # COVID-19 Public Repository Data
 
 A comprehensive versioned dataset of the repositories and relevant related metadata about public projects hosted on GitHub related to the 2019 Novel Coronavirus and associated COVID-19 disease.
