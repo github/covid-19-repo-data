@@ -2,7 +2,6 @@
 name: Generate_DB
 on:
   push:
-    paths: /data/tsv/*.tsv
     branches:    
     - master 
 
