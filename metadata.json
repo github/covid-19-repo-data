@@ -1,8 +1,0 @@
-{
-    "title": "COVID-19 GitHub Repository Metadata",
-    "description": "A comprehensive versioned dataset of the repositories and relevant related metadata about public projects hosted on GitHub related to the 2019 Novel Coronavirus and associated COVID-19 disease.",
-    "license": "CCO-1.0",
-    "license_url": "https://github.com/github/covid-19-repo-data/blob/master/LICENSE",
-    "source": "GitHub",
-    "source_url": "https://github.com/github/covid-19-repo-data"
-}
