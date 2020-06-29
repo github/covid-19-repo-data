@@ -28,6 +28,7 @@ jobs:
         FILE=`ls data/tsv/*.tsv -Art | tail -n 1`
         echo "::set-output name=latest_file::${FILE}"
 
+      # This uses hamel's personal heroku account linked to hamel.husain@gatech.edu b/c enterprise account doesn't allow programatic launching of apps.
     - name: push db to heroku
       run: |
         csvs-to-sqlite "${LATEST_FILE}" -t latest_data covid_sql.sqlite -s $'\t' -f repo_description -f topics
