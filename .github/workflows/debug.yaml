@@ -1,0 +1,25 @@
+name: Generate_DB
+on: push
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Copy Repository Contents
+      uses: actions/checkout@v2
+  
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.6
+
+    - name: install dependencies
+      run: |
+        pip3 install csvs-to-sqlite datasette
+        heroku plugins:install heroku-builds
+        
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v2
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
