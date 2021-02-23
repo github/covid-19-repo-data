@@ -24,16 +24,8 @@ A comprehensive data dictionary that explains the contents of these files is [he
 
 The files have been versioned based on a weekly snapshot of identified repositories from the week of `2020-01-20` onward. 
 
-**We will update this repository with new data files on a weekly basis, generally on Tuesday. We will revisit this each month and provide an update on continuing this commitment.**
+**We will update this repository with new data files on a monthly basis, generally on the first Tuesday of a month. We will revisit this each month and provide an update on continuing this commitment.**
 
-
-### Preview This Data With A SQL Interface
-
-The below Heroku App provides a fully equipped in browser SQL interface with full-text search and [REST API](https://datasette.readthedocs.io/en/stable/json_api.html) extensibility.
-
-https://covid-repo-data.herokuapp.com/covid_sql/latest_data
-
-> The above page is generated with [datasette](https://github.com/simonw/datasette), a tool for exploring and publishing data, which provides [many other](https://datasette.readthedocs.io/en/stable/index.html) features.
 
 ### Identification methodology
 
