@@ -24,7 +24,7 @@ A comprehensive data dictionary that explains the contents of these files is [he
 
 The files have been versioned based on a weekly snapshot of identified repositories from the week of `2020-01-20` onward. 
 
-**We will update this repository with new data files on a weekly basis, generally on Tuesday. We will revisit this each month and provide an update on continuing this commitment.**
+**We will update this repository with new data files on a monthly basis, generally on the first Tuesday of a month. We will revisit this each month and provide an update on continuing this commitment.**
 
 
 ### Identification methodology
