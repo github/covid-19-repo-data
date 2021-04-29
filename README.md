@@ -13,7 +13,7 @@ We have received a number of enquiries from researchers and the community surrou
 
 As this is such an important topic to many people at this time, we've decided to do regular, versioned, extracts of data from our systems and make them available to researchers under an open license to allow for deeper analysis of these public projects from teams outside of GitHub.
 
-If you have created any interesting research based on this data we would love to hear about it so that we can help ensure it becomes more prominently featured it. Please open a PR against the file `USER_SUBMISSIONS.md` with a link to your research. We are especially interested in highlighting the most promising and impactful projects in need of community help and support.
+If you have created any interesting research based on this data we would love to hear about it so that we can help ensure it becomes more prominently featured. Please open a PR against the file `USER_SUBMISSIONS.md` with a link to your research. We are especially interested in highlighting the most promising and impactful projects in need of community help and support.
 
 ## Open data
 
@@ -24,16 +24,8 @@ A comprehensive data dictionary that explains the contents of these files is [he
 
 The files have been versioned based on a weekly snapshot of identified repositories from the week of `2020-01-20` onward. 
 
-**We will update this repository with new data files on a weekly basis, generally on Tuesday. We will revisit this each month and provide an update on continuing this commitment.**
+**We will update this repository with new data files on a monthly basis, generally on the first Tuesday of a month. We will revisit this each month and provide an update on continuing this commitment.**
 
-
-### Preview This Data With A SQL Interface
-
-The below Heroku App provides a fully equipped in browser SQL interface with full-text search and [REST API](https://datasette.readthedocs.io/en/stable/json_api.html) extensibility.
-
-https://covid-repo-data.herokuapp.com/covid_sql/latest_data
-
-> The above page is generated with [datasette](https://github.com/simonw/datasette), a tool for exploring and publishing data, which provides [many other](https://datasette.readthedocs.io/en/stable/index.html) features.
 
 ### Identification methodology
 
@@ -41,9 +33,9 @@ Rather than relying on any one GitHub topic to identify potential COVID-19 relat
 
 Note: This has the potential to include a small number of false positives however we figured we were better to cast a wide net and allow consumers of the data to perform additional cleaning if they desire. 
 
-Furthermore, since this data is versioned based on the week the repo was initially created, there may exist data that are included for repos that were orginally `public` that have been made `private` and are currently inaccessible. 
+Furthermore, since this data is versioned based on the week the repo was initially created, there may exist data that are included for repos that were originally `public` that have been made `private` and are currently inaccessible. 
 
-The following parts of public metadata are currently being used to idenfity public projects (those licensed and not) as COVID-19 related:
+The following parts of public metadata are currently being used to identify public projects (those licensed and not) as COVID-19 related:
 
 - The repo's description
 - The name of the repo
