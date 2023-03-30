@@ -1,6 +1,3 @@
-[![Actions Status](https://github.com/github/covid-19-repo-data/workflows/Generate_DB/badge.svg)](https://github.com/github/covid-19-repo-data/actions)
-
-
 # COVID-19 Public Repository Data
 
 A comprehensive versioned dataset of the repositories and relevant related metadata about public projects hosted on GitHub related to the 2019 Novel Coronavirus and associated COVID-19 disease.
@@ -15,7 +12,7 @@ As this is such an important topic to many people at this time, we've decided to
 
 If you have created any interesting research based on this data we would love to hear about it so that we can help ensure it becomes more prominently featured. Please open a PR against the file `USER_SUBMISSIONS.md` with a link to your research. We are especially interested in highlighting the most promising and impactful projects in need of community help and support.
 
-## Open data
+## Open source data
 
 Open source is bigger than any company or community. The dataset is released under [CC0-1.0](#license) for anyone to use and learn from.
 
